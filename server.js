@@ -5,7 +5,7 @@ app.post('/', (req, res) => {
   
   res.send('created')
 })
-app.post('/gokul', (req, res) => {
+app.post('/anya', (req, res) => {
     res.send('anya')
   })
  
