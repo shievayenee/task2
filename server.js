@@ -1,14 +1,16 @@
 const express = require('express')
 const app = express()
- 
-app.post('/', (req, res) => {
-  
-  res.send('created')
+
+// respond with "hello world" when a GET request is made to the homepage
+app.get('/', (req, res) => {
+  res.send('hello world')
 })
-app.post('/anya', (req, res) => {
-    res.send('anya')
-  })
- 
-app.listen(3000, () => {
-  console.log('Example app listening on port 3000!')
+
+app.get('/anya', (req, res) => {
+  res.send('GET request to the homepage')
+})
+
+// POST method route
+app.post('/', (req, res) => {
+  res.send('POST request to the homepage')
 })
