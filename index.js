@@ -21,7 +21,7 @@ database.once('connected', () => {
 const app = express();
 
 app.use(express.json());
-const routes = require('./routes/routes');
+const routes = require('./routes/userRoute.js');
 app.use('/api', routes)
 
 app.listen(3000, () => {
