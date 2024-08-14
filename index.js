@@ -21,8 +21,8 @@ database.once('connected', () => {
 const app = express();
 
 app.use(express.json());
-const routes = require('./routes/userRoute.js');
-app.use('/api', routes)
+const routes = require('./routes/productRoute.js');
+app.use('/username', routes)
 
 app.listen(3000, () => {
     console.log(`Server Started at ${3000}`)
